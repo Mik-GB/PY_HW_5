@@ -8,6 +8,8 @@
 def degree(numb_a, numb_b):
     if numb_b == 1:
         return numb_a
-    return numb_a * degree(numb_a, numb_b - 1)
-
+    # else:
+        # return pow(numb_a, numb_b)
+        # return numb_a * degree(numb_a, numb_b - 1)
+    return numb_a * degree(numb_a, numb_b - 1) # проблема с отрицательной степенью
 print(degree(3, 5))
